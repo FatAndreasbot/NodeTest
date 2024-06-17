@@ -98,7 +98,6 @@ function parseDate(data){
     // fetch date if litterral format
     if (date.year === ''){
         // month
-        console.log(getMonth(dateStr));
         date.month = String(getMonth(dateStr));
         //year
         regex = /(-?(?:[1-9][0-9]*)?[0-9]{4})/
@@ -121,7 +120,6 @@ function parseDate(data){
 
     }
     
-    console.log(dateStr);
 
     // if nothing was found
     if (date.year === ''){
